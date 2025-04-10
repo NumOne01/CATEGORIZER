@@ -1,0 +1,9 @@
+torch
+torchvision
+numpy
+scikit-learn
+tqdm
+pytorch_metric_learning
+libmr
+scipy
+torchmetrics
