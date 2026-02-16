@@ -1,0 +1,6 @@
+**/__pycache__/
+.devcontainer/
+datasets/
+pre/
+result/
+dataset/__pycache__/

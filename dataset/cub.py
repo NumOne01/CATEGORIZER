@@ -14,7 +14,7 @@ class CUBirds(BaseDataset):
         self.path_eval_n_1 = self.root + '/valid_1'
 
         if self.mode == 'train_0':
-            self.classes = range(0, 200)
+            self.classes = range(0, 160)
             self.path = self.path_train_o
 
         elif self.mode == 'train_1':
@@ -22,7 +22,7 @@ class CUBirds(BaseDataset):
             self.path = self.path_train_n_1
 
         elif self.mode == 'eval_0':
-            self.classes = range(0, 200)
+            self.classes = range(0, 160)
             self.path = self.path_eval_o
 
         elif self.mode == 'eval_1':

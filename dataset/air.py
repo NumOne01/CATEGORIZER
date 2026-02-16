@@ -18,7 +18,7 @@ class Airs(BaseDataset):
             self.path = self.path_train_o
 
         elif self.mode == 'train_1':
-            # self.classes = range(0, 100)
+            self.classes = range(0, 100)
             self.path = self.path_train_n_1
 
         elif self.mode == 'eval_0':

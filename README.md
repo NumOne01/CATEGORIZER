@@ -13,6 +13,18 @@
 
 2. Extract the tgz or zip file into `./data/` (Exceptionally, for CUB-200-2011, put the files in a `./data/CUB200`)
 
+##
+This repository contains a modified version of vast repository.
+First install the dependencies using:
+```
+pip install -r requirements.txt
+```
+Then 
+```
+pip install -e .
+```
+
+
 ## Train Examples
 ```
 python train.py \

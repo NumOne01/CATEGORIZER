@@ -14,7 +14,7 @@ class Cars(BaseDataset):
         self.path_eval_n_1 = self.root + '/valid_1'
 
         if self.mode == 'train_0':
-            self.classes = range(0, 196)
+            self.classes = range(0, 156)
             self.path = self.path_train_o
 
         elif self.mode == 'train_1':
@@ -22,7 +22,7 @@ class Cars(BaseDataset):
             self.path = self.path_train_n_1
 
         elif self.mode == 'eval_0':
-            self.classes = range(0, 196)
+            self.classes = range(0, 156)
             self.path = self.path_eval_o
 
         elif self.mode == 'eval_1':
@@ -31,8 +31,6 @@ class Cars(BaseDataset):
 
         BaseDataset.__init__(self, self.path, self.mode, self.transform)
         
-        print('self.path:', self.path)
-
         index = 0
         for i in datasets.ImageFolder(root=self.path).imgs:
             # i[1]: label, i[0]: the full path to an image
